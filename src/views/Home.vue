@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <img class="logo" src="../assets/logo.png" alt="logo" />
-    <h1>👋Hello world🌎</h1>
+    <button class="curr-btn curr-btn-normal-filled-primary">Button Currenda</button>
+    <ejs-button>Name</ejs-button>
   </div>
 </template>

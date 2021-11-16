@@ -10,10 +10,9 @@
 </template>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+@import "~currenda-generic-vue/src/styles/bapi.scss";
 
 :root {
-  --font: Roboto, sans-serif;
   --textColor: #374961;
   --linkActiveColor: #41b783;
 }
