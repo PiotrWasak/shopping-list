@@ -38,17 +38,9 @@
 </template>
 
 <script>
-import SyncfusionTextBox from 'currenda-generic-vue/src/components/generic/SyncfusionTextBox.vue';
-import SyncfusionGrid from 'currenda-generic-vue/src/components/generic/SyncfusionGrid.vue';
-import SyncfusionButton from 'currenda-generic-vue/src/components/generic/SyncfusionButton';
 
 export default {
   name: "ShoppingList",
-  components: {
-    SyncfusionTextBox,
-    SyncfusionGrid,
-    SyncfusionButton,
-  },
   data() {
     return {
       tasks: ["Create TODO app", "Task2"],

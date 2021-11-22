@@ -2,10 +2,13 @@ import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
 
-import {ButtonPlugin, ButtonComponent} from "@syncfusion/ej2-vue-buttons";
 import SyncfusionTextBox from 'currenda-generic-vue/src/components/generic/SyncfusionTextBox.vue';
+import SyncfusionGrid from 'currenda-generic-vue/src/components/generic/SyncfusionGrid.vue';
+import SyncfusionButton from 'currenda-generic-vue/src/components/generic/SyncfusionButton';
 
-Vue.component(ButtonPlugin.name, ButtonComponent);
+Vue.component("SyncfusionTextBox", SyncfusionTextBox);
+Vue.component("SyncfusionButton", SyncfusionButton);
+Vue.component("SyncfusionGrid", SyncfusionGrid)
 
 
 new Vue({

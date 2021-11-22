@@ -12,6 +12,8 @@
 <style lang="scss">
 @import "~currenda-generic-vue/src/styles/bapi.scss";
 
+
+
 @font-face {
   font-family: "cdsicon";
   src:
