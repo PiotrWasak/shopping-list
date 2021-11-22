@@ -1,6 +1,13 @@
 <template>
-  <div id="home">
-    <button class="curr-btn curr-btn-normal-filled-primary">Button Currenda</button>
-    <ejs-button>Name</ejs-button>
-  </div>
+<shopping-list></shopping-list>
 </template>
+
+<script>
+import ShoppingList from "../components/ShoppingList";
+
+export default {
+  components: {
+    ShoppingList,
+  }
+}
+</script>

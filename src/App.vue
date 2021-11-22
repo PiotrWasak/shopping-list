@@ -12,6 +12,15 @@
 <style lang="scss">
 @import "~currenda-generic-vue/src/styles/bapi.scss";
 
+@font-face {
+  font-family: "cdsicon";
+  src:
+      url(./assets/fonts/cdsicon.woff) format('woff'),
+      url(./assets/fonts/cdsicon.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --textColor: #374961;
   --linkActiveColor: #41b783;
