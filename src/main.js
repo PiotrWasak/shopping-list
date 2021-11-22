@@ -6,6 +6,7 @@ import SyncfusionTextBox from 'currenda-generic-vue/src/components/generic/Syncf
 import SyncfusionGrid from 'currenda-generic-vue/src/components/generic/SyncfusionGrid.vue';
 import SyncfusionButton from 'currenda-generic-vue/src/components/generic/SyncfusionButton';
 
+
 Vue.component("SyncfusionTextBox", SyncfusionTextBox);
 Vue.component("SyncfusionButton", SyncfusionButton);
 Vue.component("SyncfusionGrid", SyncfusionGrid)
