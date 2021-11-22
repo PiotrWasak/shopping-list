@@ -18,7 +18,7 @@
     <SyncfusionButton @click.native="addTask" cssClass="curr-btn curr-btn-normal-filled-primary curr-icon-before-plus">Submit</SyncfusionButton>
     <br />
 
-    <ejs-grid :allowSorting="true" :dataSource="tasks"></ejs-grid>
+    <ejs-grid ref="grid" :allowSorting="true" :dataSource="tasks"></ejs-grid>
 
   </div>
 </template>
@@ -30,7 +30,7 @@ export default {
   name: "ShoppingList",
   data() {
     return {
-      tasks: [{"Task": "Task1"}, {"Task": "Task2"}],
+      tasks: [{"Task": "Task1", "Date":  new Date().toLocaleString()}, {"Task": "Task2", "Date": new Date().toLocaleString()}],
       task: "",
     };
   },
@@ -41,9 +41,9 @@ export default {
     addTask() {
       if (this.task) {
         console.log("Add task")
-        this.tasks.push({"Task": this.task});
+        this.tasks.push({"Task": this.task, "Date":  new Date().toLocaleString()});
         this.task = "";
-        GridPlugin.refresh;
+        this.$refs.grid.refresh();
       }
     },
     deleteTask(taskIndex) {
