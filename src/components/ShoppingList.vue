@@ -25,6 +25,7 @@
 
 <script>
 import {GridPlugin, Sort} from "@syncfusion/ej2-vue-grids";
+import {EventBus} from "../utils/eventBus";
 
 export default {
   name: "ShoppingList",
@@ -45,6 +46,7 @@ export default {
         this.task = "";
         this.$refs.grid.refresh();
       }
+      EventBus.$emit('button-clicked');
     },
     deleteTask(taskIndex) {
       this.tasks.splice(taskIndex, 1);
